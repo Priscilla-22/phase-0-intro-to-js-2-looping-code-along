@@ -21,15 +21,15 @@ wrapGifts(gifts);
  const names = ["Tom", "Jerry", "Simpsons", "Ricky"];
 const eventName = "swimmingGala";
 
-function wrapGifts(names, eventName){
+function writeCards(names, eventName){
     const messages = [];
-    for(i = 0; i < names.length; i++){
-    const congrats = `Congratulation ${names[i]}, you won the ${eventName}!`;
+    for(let i = 0; i < names.length; i++){
+    const congrats = `Thank you, ${names[i]}, for the wonderful surprise gift!`;
     messages.push(congrats);
 }
  return messages;
 }
-const finalMessage = wrapGifts(names, eventName);
+const finalMessage = writeCards(names, eventName);
 console.log(finalMessage); 
 
 //ASSIGNMENT 2
